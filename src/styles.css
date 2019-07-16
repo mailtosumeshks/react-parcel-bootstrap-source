@@ -1,0 +1,304 @@
+body {
+  color: black;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#topNav {
+  margin: 0px -15px;
+  overflow: hidden;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  width: 100%;
+}
+
+#topNav .entry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: .3mm;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: rgba(14, 3, 3, 0.3);
+  margin-right: 1px;
+}
+
+#topNav .entry:hover {
+  background: #ddd;
+  color: black;
+}
+
+#topNav .bookingBtn {
+  background-color: rgb(207, 164, 63);
+  font-size: 14px;
+}
+
+#topNav .bookingBtn:hover {
+  background-color: rgb(189, 140, 26);
+  color: white;
+}
+
+.activeTopNav {
+  border-bottom: .2em solid rgb(207, 164, 63);
+}
+
+.enlargedName {
+  font-size: 46px;
+  font-weight: 600
+}
+
+.carouselCaption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial;
+}
+
+.carousel-indicators li {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+#docSection {
+  margin: 0px -15px;
+}
+
+#doctorDesc {
+  padding-left: 10px;
+}
+
+#doctorDesc .name {
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 50px;
+  transform: scaleY(1.15);
+}
+
+#doctorDesc .spec {
+  font-size: 15px;
+  padding-top: 4px;
+  font-weight: 500;
+  color: dimgrey;
+}
+
+#doctorDesc .desc {
+  font-size: 14px;
+  padding-top: 18px;
+  color: dimgrey;
+}
+
+#doctorDesc .edu {
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 18px;
+  color: dimgrey;
+}
+
+#doctorDesc .eduDesc {
+  font-size: 13px;
+  padding-top: 8px;
+  color: dimgrey;
+}
+
+.docMoreDetails {
+  display: flex;
+  background-color: rgb(239, 233, 219);
+  min-height: 170px;
+  margin-right: 1px;
+}
+
+.detailsRow {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: center;
+}
+
+.detailsDesc {
+  width: 180px;
+  padding-left: 20px;
+}
+
+.lang {
+  font-size: 14px;
+  color: dimgrey;
+  font-weight: bold;
+}
+
+.langDetails {
+  font-size: 13px;
+  color: dimgrey;
+  padding-top: 7px;
+}
+
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 9px;
+  line-height: 30px;
+  right: -123px;
+  top: -22px;
+  font-size: 29px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid darkslategrey;
+  opacity: 1;
+}
+
+.servicesWrapper {
+  height: 585px;
+  background-color: rgb(31,37,44);
+}
+
+.servicesTitle {
+  color: rgb(217,178,78);
+  padding-top: 85px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.serviceOptionsBox {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1000px;
+  margin: 30px auto;
+}
+
+.serviceImage {
+  height: 170px;
+  border-radius: 90px;
+}
+
+.serviceImageText {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  width: 170px;
+  background: rgba(105,105,105, 0.4);
+  border: 2px solid dimgrey;
+  padding: 65px 0 0 0;
+  text-align: center;
+  border-radius: 90px;
+}
+
+.serviceImageText:hover {
+  background: rgba(105,105,105, 0.7);
+  cursor: pointer;
+  border: 2px solid rgb(217,178,78);
+}
+
+.insuranceWrapper {
+  display: flex;
+  height: 370px;
+  color: rgb(66,66,66);
+  background-color: rgb(217,182,101);
+}
+
+.insuranceContent {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+}
+
+.insuranceTitle {
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.insuranceDesc {
+  width: 350px;
+  font-size: .83em;
+  line-height: 1.7em;
+  padding-top: 15px;
+}
+
+.insuranceList {
+  margin: 0 30px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.insuranceList > li {
+  margin-top: 5px;
+}
+
+.insuranceViewAll {
+  margin: auto auto 0 auto;
+  background-color: rgb(31,37,44);
+  color: white;
+  height: 40px;
+  width: 100px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.blogWrapper {
+  height: 810px;
+  color: rgb(66,66,66);
+}
+
+.blogTile {
+  width: 360px;
+  margin: 0 10px;
+}
+
+.blogTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(217,182,101);
+  margin-top: 15px;
+}
+
+.blogDesc {
+  font-size: 13px;
+  margin: 5px 40px 0 0;
+}
+
+.blogAuthor {
+  font-size: 12px;
+  font-weight: 700;
+  color: darkgray;
+  margin-top: 15px;
+  letter-spacing: 0.01em;
+}
+
+.blogHeader {
+  width: 1120px;
+  margin: 75px auto 30px auto;
+  justify-content: space-between;
+}
+
+.blogTitleText {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(66,66,66);
+}
+
+.blogViewAll {
+  margin-left: auto;
+  background-color: rgb(217,182,101);
+  color: rgb(66,66,66);
+  height: 40px;
+  width: 100px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}

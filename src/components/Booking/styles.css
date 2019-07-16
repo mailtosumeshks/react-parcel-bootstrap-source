@@ -1,0 +1,151 @@
+.selectLocationContainer {
+    height: 335px;
+    width: 785px;
+    margin: -7px;
+    display: flex;
+}
+
+.locationSelectBox {
+    position: absolute;
+    bottom: 0;
+    width: 165px;
+    margin-bottom: 30px;
+}
+
+.number {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(51,51,51);
+}
+
+.address {
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.selectDoctorContainer {
+    height: 335px;
+    width: 785px;
+    margin: -7px;
+    display: flex;
+    align-items: center;
+}
+
+.previous {
+    width: 60px;
+    font-size: large;
+    text-align: center;
+    transform: scaleY(2);
+    cursor: pointer;
+}
+
+.doctorWrapper {
+    height: inherit;
+    width: 262px;
+    margin-left: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.selectBox {
+    width: 165px;
+    margin-bottom: 30px;
+}
+
+.descBox {
+    background-color: rgba(255,255,255,0.9);
+    top: 0;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.descBox > .name {
+    font-size: 14px;
+    font-weight: bold;
+    transform: scaleY(1.1);
+    color: rgb(51,51,51);
+}
+
+.descBox > .spec {
+    font-size: 13px;
+    transform: scaleY(1.1);
+    letter-spacing: 0.02em;
+}
+
+.selectDoctor {
+    background-color: rgb(51,51,51);
+    height: 38px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 13px;
+    color: white;
+    letter-spacing: 0.025em;
+}
+
+.selectDoctor:hover {
+    background-color: rgb(207, 164, 63);
+    cursor: pointer;
+}
+
+.selectAppointmentContainer {
+    height: 545px;
+    width: 785px;
+    margin: -7px;
+    display: flex;
+    align-items: center;
+}
+
+.formWrapper {
+    display: flex;
+    background-color: rgb(238, 232, 219);
+    height: 100%;
+    width: 100%;
+    margin: -5px;
+}
+
+.doctorDetails {
+    width: 30%;
+}
+
+.formDetails {
+    width: 70%;
+}
+
+input {
+    border: none;
+    height: 40px;
+}
+
+input::placeholder {
+    font-size: 12px;
+    padding-left: 10px;
+    color: gray;
+}
+
+.formDetails > .title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(217,182,101);
+}
+
+.requestAppointment {
+    height: 40px;
+    width: 400px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(51,51,51);
+    color: white;
+    line-height: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
